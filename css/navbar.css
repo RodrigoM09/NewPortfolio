@@ -1,0 +1,153 @@
+nav {
+    background: var(--color-primary);
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+nav button {
+    display: none;
+}
+.nav_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3rem solid var(--color-bg);
+}
+
+.nav_logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_profile ul {
+    position: absolute;
+    top: 140%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* Show Nav on Hover */
+.nav_profile:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav_profile ul li a {
+    padding: 1rem;
+    background: var(--color-gray-900);
+    display: block;
+    width: 100%;
+}
+
+.nav_profile ul li:last-child a {
+    background: var(--color-red);
+    color: var(--color-bg);
+}
+/*
+===========================================================================
+                            TABLET MEDIA QUERY
+===========================================================================
+*/
+@media screen and (max-width: 1024px) {
+    nav button {
+        display: inline-block;
+        font-size: 1.5rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close_nav_btn {
+        display: none;
+    }
+
+    .nav_container {
+        position: relative;
+    }
+
+    .nav_items {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        width: 12rem;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: center;
+        gap: 0;
+        display: none;
+    }
+
+    .nav_items li {
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        box-shadow: -2rem 3rem 7rem rgba(0, 0, 0.7);
+        background: var(--color-gray-900);
+        border-top: 1px solid var(--color-bg);
+        color: var(--color-white);
+        /* animation: animateMenu 4s 0 forwards;
+        opacity: 0; */
+    }
+
+    /* NAV Animation */
+    /* @keyframes animateMenu {
+      0% {
+        transform: rotateX(90deg);
+      }
+      100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+      }
+    } */
+
+    .nav_items li a {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-gray-900);
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_profile {
+        background: var(--color-gray-900);
+    }
+    .nav_profile ul {
+        top: 100%;
+        width: 100%;
+    }
+    .nav_profile .avatar {
+        margin-left: 2rem;
+    }
+}
