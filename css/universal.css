@@ -1,6 +1,6 @@
 :root {
     --color-primary: #005a9c;
-    --color-primary-light: hsl(242, 91%, 69, 18%);
+    /*--color-primary-light: hsl(242, 91%, 69, 18%);*/
     --color-secondary: #a5acaf;
     --color-tertiary: #ef3e42;
     --color-red: #da0f3f;
@@ -109,9 +109,20 @@ small {
 img {
     display: block;
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 td {
     color: var(--color-white);
+}
+
+.page-wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+.page-container{
+    height: 100%;
+    width: 100%;
+    margin-top: 5rem;
+
 }

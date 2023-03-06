@@ -1,0 +1,12 @@
+.page-container{
+    display: flex;
+    justify-content: center;
+}
+.card {
+    height: 20rem;
+    width: 12rem;
+    margin-top: 5rem;
+    padding: .5rem;
+    background-color: var(--color-gray-300);
+    border-radius: var(--card-border-radius-3);
+}
