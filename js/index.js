@@ -1,7 +1,7 @@
 const navItems = document.querySelector(".nav_items");
 const openNavBtn = document.getElementById("open_nav_btn");
 const closeNavBtn = document.getElementById("close_nav_btn");
-const imgCard = document.getElementById("imgCard")
+// const imgCard = document.getElementById("imgCard")
 
 const openNav = () => {
   navItems.style.display = "flex";
@@ -16,6 +16,6 @@ const closeNav = () => {
 openNavBtn.addEventListener("click", openNav);
 closeNavBtn.addEventListener("click", closeNav);
 
-imgCard.onmouseover = () => {
-  imgCard.style.borderRadius = "0 var(--card-border-radius-5)";
-}
+// imgCard.onmouseover = () => {
+//   imgCard.style.borderRadius = "0 var(--card-border-radius-5)";
+// }
