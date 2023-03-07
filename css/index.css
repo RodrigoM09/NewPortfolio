@@ -19,6 +19,9 @@
 #imgCard {
     border-radius: 5rem;
 }
+#imgCard img{
+    border-radius: 1rem 0;
+}
 .imgDesc{
     display: flex;
     text-align: center;
