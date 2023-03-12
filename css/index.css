@@ -126,10 +126,12 @@ div.image:nth-child(even):hover{
     .images{
         grid-template-columns: 1fr 1fr;
         grid-gap: unset;
+        margin: unset;
     }
     .page-container {
         display: flex;
         justify-content: center;
+        overflow-x: hidden;
     }
 
     #imgCard {
