@@ -114,6 +114,18 @@ div.image:nth-child(even):hover{
         align-items: center;
         text-align: center;
         height: unset;
+        width: 100%;
+    }
+    .landing {
+        margin-top: 30rem;
+    }
+    .welcome {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .images{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: unset;
     }
     .page-container {
         display: flex;
@@ -136,5 +148,8 @@ div.image:nth-child(even):hover{
         border-radius: var(--card-border-radius-5) 0;
         width: 95%;
         height: 95%;
+    }
+    .socialMediaBar {
+        width: 100vw;
     }
 }
