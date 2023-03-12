@@ -1,0 +1,18 @@
+.socialMediaBar{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5rem;
+    padding: .5rem;
+    z-index: 10;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}

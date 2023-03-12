@@ -31,6 +31,9 @@ nav button {
     font-weight: 600;
     font-size: 1.2rem;
 }
+.bx {
+    font-size: 1.5rem;
+}
 
 .nav_items {
     display: flex;
@@ -40,6 +43,13 @@ nav button {
     align-content: space-between;
     height: 100%;
 }
+.nav_items ul li a {
+    width: 100%;
+}
+.nav_container a:hover {
+    color: var(--color-white);
+}
+
 
 .nav_profile {
     position: relative;
