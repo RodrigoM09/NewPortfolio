@@ -15,44 +15,36 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <body>
+<nav class="navbar">
+    <div class="container nav_container">
+        <a href="" class="nav_logo">Rodrigo M.</a>
+        <ul class="nav_items">
+            <li><a href=""><i class="bx bx-home-alt icon"></i>Home</a></li>
+            <li><a href=""><i class="bx bx-windows icon"></i>Portfolio</a></li>
+            <li><a href=""><i class="bx bxs-file icon"></i>Resume</a></li>
+            <li><a href=""><i class='bx bx-id-card icon'></i>About Me</a></li>
+            <li><a href=""><i class='bx bx-dice-6 icon'></i>Contact Me</a></li>
+        </ul>
+        <button id="open_nav_btn"><i class='bx bx-menu'></i></button>
+        <button id="close_nav_btn"><i class='bx bx-x'></i></button>
+    </div>
+</nav>
     <div class="page-wrapper">
         <div class="page-container">
-            <nav class="navbar">
-                <div class="container nav_container">
-                    <a href="" class="nav_logo">Rodrigo M.</a>
-                    <ul class="nav_items">
-                        <li><a href=""><i class="bx bx-home-alt icon"></i></a></li>
-                        <li><a href=""><i class="bx bx-windows icon"></i></a></li>
-                        <li><a href=""><i class="bx bxs-file icon"></i></a></li>
-                        <li><a href=""><i class='bx bx-id-card icon'></i></a></li>
-                        <li><a href=""><i class='bx bx-dice-6 icon'></i></a></li>
-                        <li class="nav_profile">
-                            <div class="avatar">
-                                <img src="" alt="">
-                            </div>
-                            <ul>
-                                <li><a href="">Dashboard</a></li>
-                                <li><a href="">logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <button id="open_nav_btn"><i class='bx bx-menu'></i></button>
-                    <button id="close_nav_btn"><i class='bx bx-x'></i></button>
-                </div>
-            </nav>
-            <div class="row">
-                    <div id="imgCard">
-                        <img src="../images/APRodrigoMarquez.jpg" alt="">
+            <div class="row landing">
+<!--                    <div id="imgCard">-->
+<!--                        <img src="../images/image4.jpg" alt="">-->
+<!--                    </div>-->
+                    <div class="welcome">
+                        <span>Welcome<br></span><span>to my</span><span><br> portfolio</span>
                     </div>
-                    <div class="imgDesc">
-                        <p>Welcome<br><span>to my</span><br> portfolio</p>
-                    </div>
-                    <div class="intro">
-                        <p>
-                            My name is Rodrigo, I am an enthusiastic software engineer with a passion for problem-solving. Currently, I am pursuing a career in Software Engineering and a degree in Computer Science. I have been programming for about two years and recently graduated from a full-stack bootcamp. I have worked with Spring Boot, MERN, and LAMP.
-                            I was in the Army for 10 years and after leaving the service I was a personal trainer for 5 years. During which I was introduced to Software Development.
-                            My passions are fitness, helping others, learning, and challenging myself. I believe that my passion for helping others and challenges make me a great candidate for an Entry-Level Software Development Position.
-                        </p>
+                    <div class="images">
+                        <div class="image"><img src="../images/image1.png" alt=""></div>
+                        <div class="image"><img src="../images/image2.jpeg" alt=""></div>
+                        <div class="image"><img src="../images/image3.png" alt=""></div>
+                        <div class="image"><img src="../images/image4.jpg" alt=""></div>
+                        <div class="image"><img src="" alt=""></div>
+                        <div class="image"><img src="" alt=""></div>
                     </div>
             </div>
             <div class="row">
