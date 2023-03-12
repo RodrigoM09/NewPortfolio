@@ -102,6 +102,53 @@ div.image:nth-child(even):hover{
 }
 
 
+.middle {
+    margin: 2rem 0;
+}
+
+.textContainer
+{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.text
+{
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: relative;
+    color: #a5acaf;
+}
+
+.text::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.textContainer::before
+{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background: var(--color-primary);
+    right: 0;
+    top: 0;
+    transition: 0.6s;
+}
+
+.textContainer:hover .text::before,.textContainer:hover::before
+{
+    width: 100%;
+}
+
+
 /*
 ===========================================================================
                             MOBILE MEDIA QUERY
@@ -122,6 +169,7 @@ div.image:nth-child(even):hover{
     .welcome {
         font-size: 2rem;
         text-align: center;
+        margin-top: 7rem;
     }
     .images{
         grid-template-columns: 1fr 1fr;
