@@ -58,17 +58,6 @@ div.image:nth-child(even):hover{
     max-width: 30rem;
     text-align: center;
 }
-#imgCard {
-    height: auto;
-    width: auto;
-    border-radius: 5rem;
-}
-#imgCard {
-    border-radius: 5rem;
-}
-#imgCard img{
-    border-radius: 1rem 0;
-}
 .welcome {
     display: flex;
     font-size: 4rem;
@@ -169,35 +158,24 @@ div.image:nth-child(even):hover{
     .welcome {
         font-size: 2rem;
         text-align: center;
-        margin-top: 7rem;
+        margin-top: 10rem;
+    }
+    img{
+        height: 8rem;
+        width: auto;
     }
     .images{
         grid-template-columns: 1fr 1fr;
         grid-gap: unset;
         margin: unset;
     }
+    /*.image{*/
+    /*    padding: 0;*/
+    /*}*/
     .page-container {
         display: flex;
         justify-content: center;
         overflow-x: hidden;
-    }
-
-    #imgCard {
-        height: 20rem;
-        width: 20rem;
-        margin-top: 1rem;
-        padding: .5rem;
-        background-color: var(--color-gray-300);
-        border-radius: var(--card-border-radius-5) 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #imgCard img {
-        border-radius: var(--card-border-radius-5) 0;
-        width: 95%;
-        height: 95%;
     }
     .socialMediaBar {
         width: 100vw;
