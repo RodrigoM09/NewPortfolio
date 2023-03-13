@@ -1,10 +1,10 @@
 .row {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 5rem;
     height: 100vh;
     width: 100%;
+    border-bottom: 1px solid black;
 }
 /*First Row*/
 .page-container:nth-child(1){
@@ -29,6 +29,8 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     margin-left: 1rem;
+    cursor: pointer;
+
 }
 .image{
     padding: 1rem;
@@ -53,10 +55,6 @@ div.image:nth-child(even):hover{
     transition: all 0.5s ease;
     box-shadow: 0 5px 35px 0 rgba(0,0,0,.5);
 
-}
-.intro {
-    max-width: 30rem;
-    text-align: center;
 }
 .welcome {
     display: flex;
@@ -91,12 +89,7 @@ div.image:nth-child(even):hover{
 }
 
 
-.middle {
-    margin: 2rem 0;
-}
-
-.textContainer
-{
+.textContainer {
     position: relative;
     display: inline-block;
     cursor: pointer;
