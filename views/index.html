@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/socialMediaBar.css">
     <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/contactme.css">
     <!-- BOX ICONS CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- GOOGLE FONTS ------------>
@@ -46,41 +47,40 @@
                     </div>
                 <div id="projects"></div>
             </div>
-
-                <div class="middle">
-                    <span class="textContainer">
-                        <div class="text" data-text="Projects">Projects</div>
-                    </span>
-                </div>
+            <div class="middle">
+                <span class="textContainer">
+                    <div class="text" data-text="Projects">Projects</div>
+                </span>
+            </div>
             <div class="row projects">
-                    <div class="projectOne sixth">
-                        <div class="outer-line">
+                <div class="projectOne sixth">
+                    <div class="outer-line">
                             <div class="inner-line">
                             </div>
                             <div class="img_overlay">
                                 <a href="https://www.venued.us" target="_blank" class="text-center showRender">Click for rendered view.</a>
                             </div>
                             <p></p>
-                        </div>
-                        <button class="clickForMoreInfo">Click for details</button>
-                        <dialog id="venuedDialog" class="dialog">
-                            <div class="dialog-content">
-                                <div class="dialog-header">
-                                    <h2>Capstone Project</h2>
-                                    <button class="close-button" aria-label="Close dialog">X</button>
-                                </div>
-                                <div class="dialog-body">
-                                    <p>Our goal with Venued was to provide users with a website where event venues would be easy to find and information on those venues would be as updated and reliable as possible. My roles during this project included Project Manager, Lead communicator, and front and back-end developer.
+                    </div>
+                    <button class="clickForMoreInfo">Click for details</button>
+                    <dialog id="venuedDialog" class="dialog">
+                        <div class="dialog-content">
+                            <div class="dialog-header">
+                                <h2>Capstone Project</h2>
+                                <button class="close-button" aria-label="Close dialog">X</button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Our goal with Venued was to provide users with a website where event venues would be easy to find and information on those venues would be as updated and reliable as possible. My roles during this project included Project Manager, Lead communicator, and front and back-end developer.
                                     <div class="personalSocialMediaLogos">
                                         <a href="https://github.com/RodrigoM09" target="_blank">
-                                            <img src="../images/github.svg" alt="github" class="github socials">
+                                        <img src="../images/github.svg" alt="github" class="github socials">
                                         </a>
                                     </div>
-                                    </p>
+                                </p>
                                 </div>
                             </div>
-                        </dialog>
-                    </div>
+                    </dialog>
+                </div>
                 <div class="projectTwo fifth">
                     <div class="outer-line">
                         <div class="inner-line">
@@ -168,12 +168,73 @@
                     </div>
                 </div>
             </div>
-            <div class="socialMediaBar">
-                <div class="socialMedia">
-                    <a href="https://www.linkedin.com/in/rodrigo-marquez-5b1b3b1b9/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                    <a  href = "mailto: rodrigo.nmn.marquez@gmail.com" target="_blank"><i class='bx bxl-google'></i></a>
-                    <a href="https://www.github.com/rodrigoM09" target="_blank"><i class='bx bxl-github'></i></a>
+            <div class="row">
+                <div class="aboutMe">
+                    <div class="aboutMeContainer">
+                        <div class="aboutMeHeader">
+                            <div class="aboutMeHeaderLeft">
+                                <h1>ABOUT ME</h1>
+                            </div>
+                        </div>
+                        <div class="aboutMeBody">
+                            <div class="aboutMeBodyLeft">
+                                <p>
+                                    I am a Full Stack Web Developer with a background in the hospitality industry. I am a self-motivated individual who is always looking to learn new skills and improve my current ones. I am a team player who is always willing to help others and learn from them. I am a fast learner and I am always looking to improve my skills and knowledge.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="middle">
+                    <span class="textContainer">
+                        <div class="text" data-text="Contact Me">Contact Me</div>
+                    </span>
+            </div>
+            <div class="row contact-row">
+                    <form class="contact-form" action="https://formspree.io/f/mwkjoppq"
+                                  method="POST">
+                        <div class="name-email">
+                            <div class="name">
+                                <label class="name-label" for="name">Name:</label>
+                                <input class="name-input" type="text" id="name" name="name">
+                            </div>
+                            <div class="email">
+                                <label class="email-label" for="email">Email:</label>
+                                <input class="email-label" type="text" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="name-email">
+                            <div class="name">
+                                <label class="name-label" for="company-name">Company Name:</label>
+                                <input class="name-input" type="text" id="company-name" name="name">
+                            </div>
+                            <div class="email">
+                                <label class="email-label" for="phone-number">Phone Number:</label>
+                                <input class="email-label" type="text" id="phone-number" name="phone-number">
+                            </div>
+                        </div>
+                        <div class="message">
+                            <label class="message_placeholder" for="subject">Message:</label>
+                            <textarea id="subject" name="subject"></textarea>
+                            <input id="submit_contact" type="submit" value="Submit">
+                        </div>
+                        <div class="socialMedia">
+                            <div class="linkedin_circle"><a href="https://www.linkedin.com/in/rodrigo-nmn-marquez/" target="_blank">
+                                <img src="../images/linkedin-circled.svg" alt="linkedin" class="linkedin socials">
+                            </a></div>
+                            <div class="github_circle"> <a href="https://github.com/RodrigoM09" target="_blank">
+                                <img src="../images/github-circle.png" alt="github" class="github socials">
+                            </a></div>
+                            <div class="email_circle"> <a  href = "mailto: rodrigo.nmn.marquez@gmail.com" target="_blank">
+                                <img src="../images/circled-envelope-100.png" alt="github" class="gmail socials">
+                            </a></div>
+                            <div class="phone_circle"> <a href="https://github.com/RodrigoM09" target="_blank">
+                                <img src="../images/ringing-phone-100.png" alt="phone" class="phone socials">
+                            </a></div>
+                            <!-- testing testing -->
+                        </div>
+                    </form>
             </div>
         </div>
     </div>

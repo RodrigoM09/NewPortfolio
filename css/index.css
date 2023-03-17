@@ -2,7 +2,7 @@
     display: grid;
     align-items: center;
     padding: 5rem;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border-bottom: 1px solid black;
 }
@@ -30,6 +30,7 @@ img{
     grid-gap: 1rem;
     margin-left: 1rem;
     cursor: pointer;
+    margin-bottom: 10rem;
 
 }
 .image{

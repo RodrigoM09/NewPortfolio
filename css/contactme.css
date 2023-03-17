@@ -1,0 +1,90 @@
+.contact-row{
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+.contact-form{
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 35px;
+    width: 650px;
+    border-radius: 5px;
+    height: 600px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 25px;
+}
+.contact-me{
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.name-email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+.name, .email{
+    display: grid;
+}
+
+.name input, .email input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 14.33rem;
+    height: 3rem;
+    opacity: .5;
+}
+#subject{
+    height: 200px;
+    width: 540px;
+    justify-self: center;
+    border-radius: 5px;
+    opacity: .5;
+}
+#submit_contact{
+    width: 3.33rem;
+    height: 2rem;
+    align-self: center;
+    margin-top: 5px;
+}
+@media screen and (max-device-width: 450px) {
+    .column{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2.5em 34.5em 18em;
+    }
+    .contact-form{
+        width: 405px;
+        height: 520px;
+        justify-self: center;
+    }
+    .name input, .email input {
+        width: 11.33rem;
+    }
+    #subject{
+        width: 375px;
+    }
+    .row img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    #submit_contact{
+        width: 4.33rem;
+        height: 2rem;
+        align-self: center;
+        margin-top: 5px;
+    }
+
+}
