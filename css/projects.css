@@ -74,19 +74,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.clickForMoreInfo{
-    background-color: #7979a1;
-    max-width: fit-content;
-    align-self: center;
-    padding: .5rem;
-    border-radius: 5px;
-    opacity: .9;
-}
-.clickForMoreInfo:hover{
-    background-color: var(--color-gray-700);
-    color: white;
-    cursor: pointer;
-}
+
 
 .img_overlay{
     height: 205px;

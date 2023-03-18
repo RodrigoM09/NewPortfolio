@@ -1,0 +1,21 @@
+.row iframe{
+    justify-self: center;
+    margin: 0;
+    width: 500px;
+    height: 700px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 5px 35px 0 rgba(0,0,0,.5);
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 5rem;*/
+}
+@media screen and (max-device-width: 450px) {
+    .row iframe{
+        width: 99vw;
+    }
+}

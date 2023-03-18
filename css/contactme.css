@@ -53,10 +53,7 @@
     opacity: .5;
 }
 #submit_contact{
-    width: 3.33rem;
-    height: 2rem;
-    align-self: center;
-    margin-top: 5px;
+    margin-top: 1rem;
 }
 @media screen and (max-device-width: 450px) {
     .column{
@@ -75,7 +72,7 @@
     #subject{
         width: 375px;
     }
-    .row img{
+    .contact-row img{
         width: 30px;
         height: 30px;
         margin: 0 10px;

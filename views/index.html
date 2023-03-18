@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/socialMediaBar.css">
     <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/contactme.css">
+    <link rel="stylesheet" href="../css/resume.css">
     <!-- BOX ICONS CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- GOOGLE FONTS ------------>
@@ -62,7 +63,7 @@
                             </div>
                             <p></p>
                     </div>
-                    <button class="clickForMoreInfo">Click for details</button>
+                    <button class="btn">Click for details</button>
                     <dialog id="venuedDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -90,7 +91,7 @@
                         </div>
                         <p></p>
                     </div>
-                    <button class="clickForMoreInfo">Click for details</button>
+                    <button class="btn">Click for details</button>
                     <dialog id="fitnessDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -120,7 +121,7 @@
                         </div>
                         <p></p>
                     </div>
-                    <button class="clickForMoreInfo">Click for details</button>
+                    <button class="btn">Click for details</button>
                     <dialog id="fourthDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -148,24 +149,10 @@
             </div>
             <div class="row">
                 <div class="resume">
-                    <div class="resumeContainer">
-                        <div class="resumeHeader">
-                            <div class="resumeHeaderLeft">
-                                <h1>RODRIGO MARQUEZ</h1>
-                                <h2>Full Stack Web Developer</h2>
-                            </div>
-                            <div class="resumeHeaderRight">
-                                <div class="resumeHeaderRightTop">
-                                    <div class="resumeHeaderRightTopLeft">
-                                        <h3>
-                                            <i class='bx bxs-phone'></i>
-                                            <a href="tel:1-787-463-0000">702-463-0000</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe src="../images/Rodrigo_Marquez_Resume%20(7).pdf?#zoom=45"></iframe>
+                    <a href="../images/Rodrigo_Marquez_Resume%20(7).pdf" download="resume">
+                    <button class="btn downloadResume">Download Resume</button>
+                </a>
                 </div>
             </div>
             <div class="row">
@@ -188,7 +175,7 @@
             </div>
             <div class="middle">
                     <span class="textContainer">
-                        <div class="text" data-text="Contact Me">Contact Me</div>
+                        <div class="text" data-text="Contact&nbsp;Me">Contact&nbsp;Me</div>
                     </span>
             </div>
             <div class="row contact-row">
@@ -217,7 +204,7 @@
                         <div class="message">
                             <label class="message_placeholder" for="subject">Message:</label>
                             <textarea id="subject" name="subject"></textarea>
-                            <input id="submit_contact" type="submit" value="Submit">
+                            <input class="btn" id="submit_contact" type="submit" value="Submit">
                         </div>
                         <div class="socialMedia">
                             <div class="linkedin_circle"><a href="https://www.linkedin.com/in/rodrigo-nmn-marquez/" target="_blank">
