@@ -1,9 +1,13 @@
 .aboutMeContainer{
     display: flex;
+    justify-content: space-between;
 }
-.aboutMeBodyLeft{
+.aboutMeBodyLeft {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    padding: 20px;
+    justify-content: center;
+    padding: 4rem 6rem 0 3rem;
 }
 .aboutMeBodyLeft > p:last-child{
     font-weight: bold;
@@ -15,4 +19,10 @@ p > a{
 .aboutMeBodyRight {
     display: flex;
     flex-direction: column;
+}
+.aboutMeBodyRight > img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    align-self: end;
 }
