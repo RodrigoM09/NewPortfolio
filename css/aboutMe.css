@@ -26,3 +26,22 @@ p > a{
     border-radius: 50%;
     align-self: end;
 }
+@media screen and (max-device-width: 450px) {
+    .aboutMeContainer{
+        flex-direction: column;
+    }
+    .aboutMeBodyLeft {
+        width: 100%;
+        padding: 0;
+    }
+    .aboutMeBodyRight {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+    .aboutMeBodyRight > img{
+        width: 15rem;
+        height: 15rem;
+        align-self: center;
+    }
+}
