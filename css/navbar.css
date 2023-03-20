@@ -45,7 +45,9 @@ nav button {
     align-content: space-between;
     height: 100%;
 }
-
+/*ul > li:first-child{*/
+/*    color: var(--color-white);*/
+/*}*/
 .nav_items li a {
     display: flex;
     flex-direction: column;

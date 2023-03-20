@@ -23,11 +23,11 @@
     <div class="container nav_container">
         <a href="" class="nav_logo">Rodrigo M.</a>
         <ul class="nav_items">
-            <li><a href=""><i class="bx bx-home-alt icon"></i>Home</a></li>
-            <li><a href="#projects"><i class="bx bx-windows icon"></i>Portfolio</a></li>
-            <li><a href="#resume"><i class="bx bxs-file icon"></i>Resume</a></li>
-            <li><a href=""><i class='bx bx-id-card icon'></i>About Me</a></li>
-            <li><a href=""><i class='bx bx-dice-6 icon'></i>Contact Me</a></li>
+            <li><a href="#home" data-section="home"><i class="bx bx-home-alt icon"></i>Home</a></li>
+            <li><a href="#projects" data-section="projects"><i class="bx bx-windows icon"></i>Portfolio</a></li>
+            <li><a href="#resume" data-section="resume"><i class="bx bxs-file icon"></i>Resume</a></li>
+            <li><a href="#aboutMe" data-section="aboutMe"><i class='bx bx-id-card icon'></i>About Me</a></li>
+            <li><a href="#contactMe" data-section="contactMe"><i class='bx bx-dice-6 icon'></i>Contact Me</a></li>
         </ul>
         <button id="open_nav_btn"><i class='bx bx-menu'></i></button>
         <button id="close_nav_btn"><i class='bx bx-x'></i></button>
@@ -35,7 +35,7 @@
 </nav>
     <div class="page-wrapper">
         <div class="page-container">
-            <div class="row landing">
+            <div class="row landing" id="home" data-section="home">
                     <div class="welcome">
                         <span>Welcome<br></span><span>to my</span><span><br> portfolio</span>
                     </div>
@@ -47,9 +47,9 @@
                         <div class="image"><img src="../images/Surf.jpeg" alt=""></div>
                         <div class="image"><img src="../images/image3.png" alt=""></div>
                     </div>
-                <div id="projects"></div>
+<!--                <div id="projects"></div>-->
             </div>
-            <div class="middle">
+            <div class="middle" id="projects" data-section="projects">
                 <span class="textContainer">
                     <div class="text" data-text="Projects">Projects</div>
                 </span>
@@ -64,7 +64,7 @@
                             </div>
                             <p></p>
                     </div>
-                    <button class="btn">Click for details</button>
+                    <button class="btn clickForMoreInfo">Click for details</button>
                     <dialog id="venuedDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -92,7 +92,7 @@
                         </div>
                         <p></p>
                     </div>
-                    <button class="btn">Click for details</button>
+                    <button class="btn clickForMoreInfo">Click for details</button>
                     <dialog id="fitnessDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -122,7 +122,7 @@
                         </div>
                         <p></p>
                     </div>
-                    <button class="btn">Click for details</button>
+                    <button class="btn clickForMoreInfo">Click for details</button>
                     <dialog id="fourthDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
@@ -141,9 +141,9 @@
                         </div>
                     </dialog>
                 </div>
-                <div id="resume"></div>
+<!--                <div id="resume"></div>-->
             </div>
-            <div class="middle">
+            <div class="middle" id="resume" data-section="resume">
                     <span class="textContainer">
                         <div class="text" data-text="Resume">Resume</div>
                     </span>
@@ -156,7 +156,7 @@
                 </a>
                 </div>
             </div>
-            <div class="middle">
+            <div class="middle" id="aboutMe" data-section="aboutMe">
                     <span class="textContainer">
                         <div class="text" data-text="About&nbsp;Me">About&nbsp;Me</div>
                     </span>
@@ -197,7 +197,7 @@
                     </div>
                 </div>
             </div>
-            <div class="middle">
+            <div class="middle" id="contactMe" data-section="contactMe">
                     <span class="textContainer">
                         <div class="text" data-text="Contact&nbsp;Me">Contact&nbsp;Me</div>
                     </span>
