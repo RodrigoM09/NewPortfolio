@@ -44,11 +44,17 @@
     transform: translateX(0);
     opacity: 1;
 }
-img{
+img {
     height: 10rem;
     width: auto;
 }
-
+.img__description{
+    opacity: 0;
+}
+.image:hover .img__description{
+    opacity: 1;
+    /*transition: opacity 250ms ease-in;*/
+}
 .images{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -59,7 +65,7 @@ img{
 
 }
 .image{
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     transition: 1s box-shadow;
 }
 div.image:nth-child(odd) {
@@ -67,14 +73,11 @@ div.image:nth-child(odd) {
     transition: all 0.5s ease;
     animation: rotate 2s ease-in-out infinite;
     animation-iteration-count: 2;
-
-
 }
 div.image:nth-child(odd):hover{
     transform: scale(1.1)  rotate(0deg);
     transition: all 0.5s ease;
     box-shadow: 0 5px 35px 0 rgba(0,0,0,.5);
-
 }
 div.image:nth-child(even){
     transform: rotate(-5deg);
