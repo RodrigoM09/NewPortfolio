@@ -48,7 +48,7 @@ img {
     height: 10rem;
     width: auto;
 }
-.img__description{
+.img_description{
     opacity: 0;
 }
 .image:hover .img__description{
@@ -219,6 +219,7 @@ div.image:nth-child(even):hover{
         font-size: 2rem;
         text-align: center;
         margin-top: 10rem;
+        gap: unset;
     }
     img{
         height: 8rem;
