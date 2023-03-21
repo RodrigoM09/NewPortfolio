@@ -24,10 +24,10 @@
         <a href="" class="nav_logo">Rodrigo M.</a>
         <ul class="nav_items">
             <li><a href="#home" data-section="home"><i class="bx bx-home-alt icon"></i>Home</a></li>
-            <li><a href="#projects" data-section="projects"><i class="bx bx-windows icon"></i>Portfolio</a></li>
-            <li><a href="#resume" data-section="resume"><i class="bx bxs-file icon"></i>Resume</a></li>
-            <li><a href="#aboutMe" data-section="aboutMe"><i class='bx bx-id-card icon'></i>About Me</a></li>
-            <li><a href="#contactMe" data-section="contactMe"><i class='bx bx-dice-6 icon'></i>Contact Me</a></li>
+            <li><a href="#projectsAnchor" data-section="projects"><i class="bx bx-windows icon"></i>Portfolio</a></li>
+            <li><a href="#resumeAnchor" data-section="resume"><i class="bx bxs-file icon"></i>Resume</a></li>
+            <li><a href="#aboutMeAnchor" data-section="aboutMe"><i class='bx bx-id-card icon'></i>About Me</a></li>
+            <li><a href="#contactMeAnchor" data-section="contactMe"><i class='bx bx-dice-6 icon'></i>Contact Me</a></li>
         </ul>
         <button id="open_nav_btn"><i class='bx bx-menu'></i></button>
         <button id="close_nav_btn"><i class='bx bx-x'></i></button>
@@ -47,15 +47,17 @@
                         <div class="image"><img src="../images/Surf.jpeg" alt=""></div>
                         <div class="image"><img src="../images/image3.png" alt=""></div>
                     </div>
-<!--                <div id="projects"></div>-->
+                <div id="projectsAnchor">
+                    <div id="projects" data-section="projects"></div>
+                </div>
             </div>
-            <div class="middle" id="projects" data-section="projects">
+            <div class="middle">
                 <span class="textContainer">
                     <div class="text" data-text="Projects">Projects</div>
                 </span>
             </div>
             <div class="row projects">
-                <div class="projectOne sixth">
+                <div class="projectOne sixth from-left fade-in">
                     <div class="outer-line">
                             <div class="inner-line">
                             </div>
@@ -83,7 +85,7 @@
                             </div>
                     </dialog>
                 </div>
-                <div class="projectTwo fifth">
+                <div class="projectTwo fifth fade-in">
                     <div class="outer-line">
                         <div class="inner-line">
                         </div>
@@ -113,7 +115,7 @@
                         </div>
                     </dialog>
                 </div>
-                <div class="projectThree fourth">
+                <div class="projectThree fourth from-right fade-in">
                     <div class="outer-line">
                         <div class="inner-line">
                         </div>
@@ -141,9 +143,11 @@
                         </div>
                     </dialog>
                 </div>
-<!--                <div id="resume"></div>-->
+                <div id="resumeAnchor">
+                    <div id="resume" data-section="resume"></div>
+                </div>
             </div>
-            <div class="middle" id="resume" data-section="resume">
+            <div class="middle">
                     <span class="textContainer">
                         <div class="text" data-text="Resume">Resume</div>
                     </span>
@@ -155,8 +159,11 @@
                     <button class="btn downloadResume">Download Resume</button>
                 </a>
                 </div>
+                <div id="aboutMeAnchor">
+                    <div id="aboutMe" data-section="aboutMe"></div>
+                </div>
             </div>
-            <div class="middle" id="aboutMe" data-section="aboutMe">
+            <div class="middle">
                     <span class="textContainer">
                         <div class="text" data-text="About&nbsp;Me">About&nbsp;Me</div>
                     </span>
@@ -164,7 +171,7 @@
             <div class="row">
                 <div class="aboutMe">
                     <div class="aboutMeContainer">
-                        <div class="aboutMeBodyLeft">
+                        <div class="aboutMeBodyLeft fade-in from-left">
                             <div class="aboutMeHeader">
                                 <div class="aboutMeHeaderLeft">
                                     <h2>Hello. I'm Rodrigo.</h2>
@@ -185,7 +192,7 @@
                             <h2>Technical Skills:</h2>
                             <p>HTML | CSS3 | Bootstrap | JavaScript | Java | PHP | MySQL | MongoDB | SpringBoot | Spring MVC | OOP | Git </p>
                         </div>
-                        <div class="aboutMeBodyRight">
+                        <div class="aboutMeBodyRight fade-in from-right">
                             <img src="../images/AP%20Rodrigo%20Marquez.jpg" alt="">
                             <div class="aboutMeInformation">
                                 <p><span>Name:</span> Rodrigo Marquez</p>
@@ -196,10 +203,13 @@
                         </div>
                     </div>
                 </div>
+                <div id="contactMeAnchor">
+                    <div id="contactMe" data-section="contactMe"></div>
+                </div>
             </div>
-            <div class="middle" id="contactMe" data-section="contactMe">
+            <div class="middle">
                     <span class="textContainer">
-                        <div class="text" data-text="Contact&nbsp;Me">Contact&nbsp;Me</div>
+                        <div class="text" data-text="ContactMe">Contact&nbsp;Me</div>
                     </span>
             </div>
             <div class="row contact-row">
