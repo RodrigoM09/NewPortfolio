@@ -65,6 +65,10 @@ img{
 div.image:nth-child(odd) {
     transform: rotate(5deg);
     transition: all 0.5s ease;
+    animation: rotate 2s ease-in-out infinite;
+    animation-iteration-count: 2;
+
+
 }
 div.image:nth-child(odd):hover{
     transform: scale(1.1)  rotate(0deg);
@@ -75,6 +79,10 @@ div.image:nth-child(odd):hover{
 div.image:nth-child(even){
     transform: rotate(-5deg);
     transition: all 0.5s ease;
+    animation: rotate2 2s ease-in-out infinite;
+    animation-iteration-count: 2;
+
+
 }
 div.image:nth-child(even):hover{
     transform: scale(1.15)  rotate(0deg);
@@ -84,8 +92,12 @@ div.image:nth-child(even):hover{
 }
 .welcome {
     display: flex;
+    flex-direction: column;
     font-size: 4rem;
     text-align: start;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
 }
 .welcome {
     text-transform: uppercase;
@@ -106,7 +118,7 @@ div.image:nth-child(even):hover{
     -webkit-text-fill-color: transparent;
     animation: textclip 3s linear infinite;
     animation-iteration-count: 2;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 @keyframes textclip {
@@ -114,6 +126,30 @@ div.image:nth-child(even):hover{
         background-position: 200% center;
     }
 }
+
+@keyframes rotate{
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+@keyframes rotate2{
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
 
 
 .textContainer {
