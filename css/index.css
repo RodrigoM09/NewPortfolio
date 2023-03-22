@@ -1,6 +1,7 @@
 .row {
     display: grid;
     align-items: center;
+    justify-content: center;
     padding: 5rem;
     width: 100%;
     border-bottom: 1px solid black;
@@ -51,7 +52,7 @@ img {
 .img_description{
     opacity: 0;
 }
-.image:hover .img__description{
+.image:hover .img_description{
     opacity: 1;
     /*transition: opacity 250ms ease-in;*/
 }
