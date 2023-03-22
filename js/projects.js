@@ -1,9 +1,11 @@
 //Show Dialog
-$(".clickForMoreInfo").click(function () {
-    $(this).next(".dialog").show();
+$(".btn").click(function () {
+    $(this).next(".dialog").show().css("display", "flex");
+    $(this).css("visibility", "hidden");
 });
  $(".close-button").click(function () {
     $(this).closest(".dialog").hide();
+     $(".btn").css("visibility", "visible");
  });
 
 
@@ -12,12 +14,6 @@ $(document).mouseup(function (e) {
     let container = $(".dialog");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         container.hide();
+        $(".btn").css("visibility", "visible");
     }
-});
-
-const projects = document.getElementById('project');
-const background = document.getElementsByClassName('.information_container');
-
-projects.addEventListener('mouseover', (e) => {
-    background.style.opacity = '1';
 });
