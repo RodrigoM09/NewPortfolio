@@ -45,6 +45,15 @@ $(document).mouseup(function (e) {
     }
 });
 
+const projects = document.getElementById('project');
+const background = document.getElementsByClassName('.information_container');
+
+projects.addEventListener('mouseover', (e) => {
+    background.style.opacity = '1';
+});
+
+
+
 
 // const overlays = document.querySelectorAll('.overlay');
 //
