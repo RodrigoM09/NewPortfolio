@@ -100,8 +100,8 @@
                             <div class="dialog-body">
                                 <p>Our goal with Venued was to provide users with a website where event venues would be easy to find and information on those venues would be as updated and reliable as possible. My roles during this project included Project Manager, Lead communicator, and front and back-end developer.
                                 </p>
-                                </div>
                             </div>
+                        </div>
                     </dialog>
                 </div>
                 <div class="projectTwo fifth fade-in">
@@ -117,18 +117,18 @@
                     <dialog id="fitnessDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
-                                <h2>PHP Trainer/Client Site</h2>
+                                <div class="media-header">
+                                    <h2>PHP Trainer/Client Site</h2>
+                                    <a href="https://github.com/RodrigoM09/FitnessWebsite" target="_blank">
+                                    <img src="../images/github.svg" alt="github" class="github socials">
+                                    </a>
+                                </div>
                                 <button class="close-button" aria-label="Close dialog">X</button>
                             </div>
                             <div class="dialog-body">
                                 <p>Trainer/Client Site, unfortunately GitHub pages does not allow PHP.
                                     I could not link a live page to this however,
                                     this will lead to the code on GitHub
-                                <div class="personalSocialMediaLogos">
-                                    <a href="https://github.com/RodrigoM09/FitnessWebsite" target="_blank">
-                                        <img src="../images/github.svg" alt="github" class="github socials">
-                                    </a>
-                                </div>
                                 </p>
                             </div>
                         </div>
@@ -143,20 +143,20 @@
                         </div>
                         <p></p>
                     </div>
-                    <button class="btn clickForMoreInfo">Click for details</button>
+                    <button class="btn">Click for details</button>
                     <dialog id="fourthDialog" class="dialog">
                         <div class="dialog-content">
                             <div class="dialog-header">
-                                <h2>First Portfolio</h2>
-                                <button class="close-button" aria-label="Close dialog">X</button>
-                            </div>
-                            <div class="dialog-body">
-                                <p>My first portfolio using HTML, CSS,<br> and JavaScript.
-                                <div class="personalSocialMediaLogos">
+                                <div class="media-header">
+                                    <h2>First Portfolio</h2>
                                     <a href="https://github.com/RodrigoM09" target="_blank">
                                         <img src="../images/github.svg" alt="github" class="github socials">
                                     </a>
                                 </div>
+                                <button class="close-button" aria-label="Close dialog">X</button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>My first portfolio using HTML, CSS,<br> and JavaScript.
                                 </p>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                     </span>
             </div>
             <div class="row contact-row">
-                    <form class="contact-form" action="https://formspree.io/f/mwkjoppq"
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwkjoppq"
                                   method="POST">
                         <div class="name-email">
                             <div class="name">
@@ -308,6 +308,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/contactMe.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/projects.js"></script>
 </body>
