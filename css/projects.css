@@ -18,7 +18,9 @@
 .projectBlank{
     opacity: 0;
 }
-
+.dialog-body{
+    margin-top: 1rem;
+}
 .outer-line{
     position: relative;
     display: flex;
@@ -124,10 +126,7 @@
     justify-content: end;
     z-index: -9999;
 }
-/*.projectOne:hover .information_container{*/
-/*    opacity: unset;*/
-/*    animation: bounceIn 0.6s linear;*/
-/*}*/
+
 .dialog {
     background-color: var(--color-gray-700);
     opacity: .9;
@@ -136,7 +135,7 @@
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     padding: 1rem;
-    height: 34rem;
+    height: 36rem;
     width: 26rem;
     margin: 0 auto;
     display: none;
