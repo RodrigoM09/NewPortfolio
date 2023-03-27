@@ -9,6 +9,15 @@
     justify-content: center;
     padding: 0 3rem 4rem 0;
 }
+.aboutMeHeaderLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.aboutMeHeaderLeft > h1{
+    font-size: 3rem;
+    margin: 0;
+}
 .aboutMeBodyLeft > p:last-child{
     font-weight: bold;
 }
