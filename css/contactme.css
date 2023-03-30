@@ -55,6 +55,9 @@
 #submit_contact{
     margin-top: 1rem;
 }
+.submit{
+    visibility: unset;
+}
 @media screen and (max-device-width: 450px) {
     .column{
         display: grid;

@@ -266,7 +266,8 @@
                     </span>
             </div>
             <div class="row contact-row">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwkjoppq"
+<!--                action="https://formspree.io/f/mwkjoppq"-->
+                    <form class="contact-form" id="contactForm"
                                   method="POST">
                         <div class="name-email">
                             <div class="name">
@@ -291,7 +292,7 @@
                         <div class="message">
                             <label class="message_placeholder" for="subject">Message:</label>
                             <textarea id="subject" name="subject"></textarea>
-                            <input class="btn" id="submit_contact" onclick="validate()" type="submit" value="Submit">
+                            <input class="submit" id="submit_contact" type="submit" value="Submit">
                         </div>
                         <div class="socialMedia">
                             <div class="linkedin_circle"><a href="https://www.linkedin.com/in/rodrigo-nmn-marquez/" target="_blank">
@@ -315,5 +316,13 @@
     <script src="../js/contactMe.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/projects.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("Fy_OW7NZffeuXuCBl");
+    })();
+    </script>
 </body>
 </html>
