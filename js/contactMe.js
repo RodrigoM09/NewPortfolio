@@ -55,7 +55,7 @@ function isValid(){
 }
 document.getElementById('contactForm').addEventListener('submit', function (event){
     event.preventDefault();
-    alert('Thanks for the email, we\'ll be in touch promptly.');
+    alert('Thanks for the email, I\'ll be in touch promptly.');
     if(isValid()){
         // Prepare the data to be sent to formspree
         let templateParams = {
