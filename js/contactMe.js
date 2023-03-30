@@ -38,6 +38,7 @@ function fieldValidation(field, validationFunction){
     if(field == null) return false;
     let isFieldValid = validationFunction(field.value)
     if(!isFieldValid){
+        field.placeholder = field.id
         field.className = 'placeholderRed';
     } else {
         field.className = '';
@@ -53,10 +54,11 @@ function isValid(){
     valid &= fieldValidation(fields.message, isNotEmpty);
     return valid;
 }
+
 document.getElementById('contactForm').addEventListener('submit', function (event){
     event.preventDefault();
-    alert('Thanks for the email, I\'ll be in touch promptly.');
     if(isValid()){
+        alert('Thanks for the email, I\'ll be in touch promptly.');
         // Prepare the data to be sent to formspree
         let templateParams = {
             name: fields.name.value,

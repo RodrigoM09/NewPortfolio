@@ -58,6 +58,9 @@
 .submit{
     visibility: unset;
 }
+.placeholderRed {
+    color: red;
+}
 @media screen and (max-device-width: 450px) {
     .column{
         display: grid;
